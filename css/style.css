@@ -1,0 +1,482 @@
+/*=---=*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  cursor: default;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+a {
+  cursor: pointer;
+}
+
+/*=---=*/
+.c__con {
+  max-width: 1185px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media (max-width: 1200px) {
+  .c__con {
+    max-width: 977px;
+  }
+}
+@media (max-width: 992px) {
+  .c__con {
+    max-width: 752px;
+  }
+}
+@media (max-width: 767px) {
+  .c__con {
+    max-width: none;
+  }
+}
+
+.logo {
+  font-family: "BebasNeueBold";
+  font-size: 25px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+}
+
+.open-block {
+  padding: 0 5px;
+  min-height: 100vh;
+  background: url(../img/backgrounds/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+.open-block__logo {
+  padding-top: 5vh;
+}
+.open-block__center {
+  margin-top: 40vh;
+}
+.open-block__title {
+  font-family: "BebasNeueBold";
+  font-size: 60px;
+  line-height: 70px;
+  letter-spacing: 5.70937px;
+  color: #FFFFFF;
+}
+@media (max-width: 767px) {
+  .open-block__title {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
+.open-block__subtitle {
+  font-family: "OpenSans";
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.open-block__scroll {
+  font-family: "OpenSans";
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 3.7px;
+  color: #FFFFFF;
+  margin-top: 35vh;
+}
+
+.nav {
+  border-bottom: 1px solid black;
+}
+.nav__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+.nav__logo {
+  color: black;
+}
+.nav__item {
+  padding: 10px;
+  font-family: "OpenSans";
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 1.09091px;
+  color: #48555B;
+}
+.nav__item:hover {
+  color: #00A4E5;
+}
+
+.info__logo {
+  text-align: center;
+  width: 200px;
+  position: relative;
+  padding: 10px;
+  margin: 40px auto;
+}
+.info__logo img {
+  position: absolute;
+  left: 37%;
+  bottom: 0%;
+}
+.info__colums {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 992px) {
+  .info__colums {
+    flex-direction: column;
+  }
+}
+.info__left-col {
+  width: 45%;
+}
+@media (max-width: 992px) {
+  .info__left-col {
+    width: 100%;
+  }
+}
+.info__title {
+  font-family: "OpenSans";
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.1875px;
+  color: #48555B;
+}
+.info__title a {
+  color: #16ACE8;
+}
+.info__text {
+  margin-top: 20px;
+  font-family: "OpenSans";
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 0.1875px;
+  color: #48555B;
+}
+.info__right-col {
+  width: 48%;
+  display: flex;
+  justify-content: space-around;
+  font-family: "OpenSans";
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.1875px;
+  color: #FFFFFF;
+  min-height: 300px;
+}
+@media (max-width: 992px) {
+  .info__right-col {
+    margin-top: 10px;
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+.info__right-col p {
+  padding: 10px;
+}
+.info__im-1 {
+  width: 27%;
+  background: url(../img/basic/first.png) no-repeat;
+}
+.info__im-1:hover {
+  opacity: 0.9;
+  transition: opacity 0.4s;
+}
+@media (max-width: 992px) {
+  .info__im-1 {
+    width: 33%;
+    font-size: 17px;
+    line-height: 20px;
+  }
+}
+.info__im-2 {
+  width: 27%;
+  background: url(../img/basic/seckond.png) no-repeat;
+}
+.info__im-2:hover {
+  opacity: 0.9;
+  transition: opacity 0.4s;
+}
+@media (max-width: 992px) {
+  .info__im-2 {
+    width: 33%;
+    font-size: 17px;
+    line-height: 20px;
+  }
+}
+.info__im-3 {
+  width: 27%;
+  background: url(../img/basic/third.png) no-repeat;
+}
+.info__im-3:hover {
+  opacity: 0.9;
+  transition: opacity 0.4s;
+}
+@media (max-width: 992px) {
+  .info__im-3 {
+    width: 33%;
+    font-size: 17px;
+    line-height: 20px;
+  }
+}
+.info__bottom {
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 992px) {
+  .info__bottom {
+    margin: 50px 0;
+  }
+}
+@media (max-width: 767px) {
+  .info__bottom {
+    justify-content: space-around;
+  }
+}
+.info__sheep {
+  font-family: "OpenSans";
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 2px;
+  color: #48555B;
+  padding: 0 10px 0 0;
+}
+@media (max-width: 1200px) {
+  .info__sheep p {
+    display: inline;
+  }
+}
+@media (max-width: 767px) {
+  .info__sheep p {
+    display: block;
+  }
+}
+.info__lowwer-text {
+  font-family: "OpenSans";
+  font-size: 11px;
+  line-height: 19px;
+  letter-spacing: 0.2px;
+  color: #48555B;
+  padding: 7px;
+}
+@media (max-width: 767px) {
+  .info__lowwer-text {
+    display: none;
+  }
+}
+.info__btn {
+  font-family: "OpenSans";
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+  background-color: #00A4E5;
+  height: 40px;
+  min-width: 150px;
+  padding: 15px;
+}
+.info__btn:hover {
+  background-color: #37c1f8;
+  transition: background-color 0.4s;
+}
+
+.slider__row {
+  display: flex;
+  justify-content: space-between;
+}
+.slider__item {
+  border: 1px solid lightgray;
+  padding: 12px;
+  width: 30%;
+}
+.slider__item h3 {
+  font-family: "OpenSans";
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.4px;
+  color: #48555B;
+  padding: 6px 0;
+}
+.slider__item p {
+  font-family: "OpenSans";
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 0.18px;
+  color: #48555B;
+}
+
+.citi {
+  background: url(../img/backgrounds/bg2.png) center no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+@media (max-width: 767px) {
+  .citi {
+    background-size: auto;
+  }
+}
+.citi__inner {
+  text-align: center;
+}
+.citi__title {
+  font-family: "OpenSans";
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+  color: #48555B;
+  padding: 150px 0 40px 0;
+}
+.citi__btn {
+  font-family: "OpenSans";
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+  background-color: #00A4E5;
+  height: 40px;
+  min-width: 150px;
+  padding: 15px;
+}
+.citi__btn:hover {
+  background-color: #37c1f8;
+  transition: background-color 0.4s;
+}
+
+.signup {
+  background-color: black;
+}
+.signup__col {
+  min-height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "OpenSans";
+}
+@media (max-width: 767px) {
+  .signup__col {
+    flex-direction: column;
+    max-width: 250px;
+    margin: 0 auto;
+  }
+}
+.signup__text {
+  padding: 0 50px;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.8px;
+  color: #FFFFFF;
+}
+.signup__input-line {
+  padding: 10px;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.07px;
+  color: #48555B;
+}
+@media (max-width: 767px) {
+  .signup__input-line {
+    width: 100%;
+  }
+}
+.signup__btn {
+  padding: 10px;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: #FFFFFF;
+  background: #00A4E5;
+}
+.signup__btn:hover {
+  background-color: #37c1f8;
+  transition: background-color 0.4s;
+}
+@media (max-width: 767px) {
+  .signup__btn {
+    width: 100%;
+  }
+}
+
+.footer {
+  text-align: center;
+  background-color: black;
+}
+.footer__text {
+  padding: 30px;
+  font-family: "OpenSans";
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 0.8px;
+  color: #FFFFFF;
+}/*# sourceMappingURL=style.css.map */
